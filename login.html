@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Library Login</title>
+
+<style>
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:Arial;
+background:linear-gradient(120deg,#141e30,#243b55);
+color:white;
+}
+
+.login-box{
+background:rgba(0,0,0,0.6);
+padding:40px;
+border-radius:10px;
+width:320px;
+text-align:center;
+box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+
+input{
+width:100%;
+padding:10px;
+margin:10px 0;
+border:none;
+border-radius:5px;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#00c6ff;
+border:none;
+color:white;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#0095cc;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h2>📚 Library Access</h2>
+
+<input id="name" placeholder="Student Name">
+
+<input id="class" placeholder="Class">
+
+<button onclick="enter()">ENTER LIBRARY</button>
+
+</div>
+
+<script>
+
+function enter(){
+
+var name=document.getElementById("name").value;
+var cls=document.getElementById("class").value;
+
+if(name=="" || cls==""){
+alert("Please enter your information");
+return;
+}
+
+/* chuyển sang trang thư viện */
+window.location.href="https://sites.google.com/nhc.edu.vn/thuvientruongthptnguyenhuucanh?usp=sharing";
+
+}
+
+</script>
+
+</body>
+</html>
